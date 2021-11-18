@@ -15,7 +15,6 @@ Himax-AIoT-WF-G1 Platform EVB includes Himax WE-I Plus MCU, image sensor and ric
   - [Flash Image via OTA tool update](#flash-image-via-ota-tool-update)
   - [Check UART Message Output](#check-uart-message-output)
 - [WIFI Network Setup](#wifi-network-setup)
-- [Operators Network Setup](#operators-network-setup)
 - [Connect Azure Device Provisioning Service(DPS) and IoTHub Device](#connect-azure-device-provisioning-servicedps-and-iothub-device)
 - [Connect Azure IoT Central](#connect-azure-iot-central)
   - [Send Algorithm Metadata](#send-algorithm-metadata)
@@ -93,7 +92,7 @@ Select 0.extit/back when sent file done.
   
 ![alt text](images/Himax-AIoT-WIFI-G1_OTATool_Step3.png)
 
-- ***Step 6:*** Excute OTA.exe on `Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master//tools/OTA_Tools/` and select <br><span style="color:red">1.FORCE UPGRADE </span>.
+- ***Step 6:*** Excute OTA.exe on `Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/tools/OTA_Tools/` and select <br><span style="color:red">1.FORCE UPGRADE </span>.
 
 ![alt text](images/Himax-AIoT-WIFI-G1_OTATool_Step4.png)
 
@@ -147,20 +146,6 @@ Flash Image via OTA tool done
     - #define NTP_TIMEZONE	 "key in your contoury UTC"
     - Example taiwan utc time zone: 
     - #define NTP_TIMEZONE	 "8"
-    
-## Operators Network Setup
-    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/azure_iothub.c 
-    - #define ENABLE_OPERATORS_NETWORK_SETUP
-    -
-    - Operators network setting in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/external/nb_iot/type1sc/type1sc.h 
-    - #define OPERATORS_LPWAN_TPYE		<"choose support LPWAN for your SIM Card">
-    - #define OPERATORS_APN			<"choose support APN for your SIM Card">
-    - #define OPERATORS_BAND		<"choose support BAND for your SIM Card">
-    -
-    - Himax-AIoT-WF-G1-SDK default operators network setting as follows:
-    - #define OPERATORS_LPWAN_TPYE		LPWAN_CATM1
-    - #define OPERATORS_APN			    "\"internet.iot\""
-    - #define OPERATORS_BAND		    LPWAN_BAND3
     
 ##  Connect Azure Device Provisioning Service(DPS) and IoTHub Device
     - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/inc/azure_iothub.h 
