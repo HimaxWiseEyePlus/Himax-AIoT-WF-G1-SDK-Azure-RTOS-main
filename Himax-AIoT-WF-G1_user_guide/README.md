@@ -78,11 +78,11 @@ Power supply by usb or battery(AAA*4)
 - 
 ![alt text](images/Himax-AIoT-WIFI-G1_BootFromI2C_PinSetting.png)
 
-- ***Step 3:*** Excute OTA.exe on `/tools/OTA_Tools/` and select <br><span style="color:red">3.Other Tools</span>.
+- ***Step 3:*** Excute OTA.exe on `Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/tools/OTA_Tools/` and select <br><span style="color:red">3.Other Tools</span>.
 
 ![alt text](images/Himax-AIoT-WIFI-G1_OTATool_Setp1.png)
   
-- ***Step 4.1:*** Excute OTA.exe on `/tools/OTA_Tools/` and select <br><span style="color:red">1.Boot from I2C </span>.
+- ***Step 4.1:*** Excute OTA.exe on `Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/tools/OTA_Tools/` and select <br><span style="color:red">1.Boot from I2C </span>.
 - ***Step 4.2:*** Enter the input files path manually:<br>`BootUpFromI2C\HX6537-A09TDIG-1111K_QFN72_Debug\sign_formal_PA8530_EM9D_2nd_Bootloader.bin`.<br> 
   
 ![alt text](images/Himax-AIoT-WiFi-G1_OTATool_Step2.png)
