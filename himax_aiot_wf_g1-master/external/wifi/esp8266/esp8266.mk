@@ -1,0 +1,5 @@
+DEV_CSRCDIR +=  $(EMBARC_ROOT)/external/wifi/esp8266
+DEV_INCDIR +=  $(EMBARC_ROOT)/external/wifi/esp8266
+
+
+DEV_DEFINES += -DWIFI_ESP8266
