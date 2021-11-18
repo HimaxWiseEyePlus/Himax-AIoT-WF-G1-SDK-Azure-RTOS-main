@@ -89,11 +89,11 @@ Power supply by usb or battery(AAA*4)
   
 Select 0.extit/back when sent file done.
 
-- ***Step 5:*** Excute OTA.exe on `/tools/OTA_Tools/` and select <br><span style="color:red">2.Upgrade </span>.
+- ***Step 5:*** Excute OTA.exe on `Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/tools/OTA_Tools/` and select <br><span style="color:red">2.Upgrade </span>.
   
 ![alt text](images/Himax-AIoT-WIFI-G1_OTATool_Step3.png)
 
-- ***Step 6:*** Excute OTA.exe on `/tools/OTA_Tools/` and select <br><span style="color:red">1.FORCE UPGRADE </span>.
+- ***Step 6:*** Excute OTA.exe on `Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master//tools/OTA_Tools/` and select <br><span style="color:red">1.FORCE UPGRADE </span>.
 
 ![alt text](images/Himax-AIoT-WIFI-G1_OTATool_Step4.png)
 
@@ -140,7 +140,7 @@ Flash Image via OTA tool done
   ![alt text](images/Himax-AIoT-WIFI-G1_Azure_IoT_Explorer_RecvData.png)
 
 ## WIFI Network Setup
-    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1\azure_iothub.c 
+    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/azure_iothub.c 
     - #define WIFI_SSD 		"SSID"
     - #define WIFI_PW  		"PASSWORD"
 
@@ -149,10 +149,10 @@ Flash Image via OTA tool done
     - #define NTP_TIMEZONE	 "8"
     
 ## Operators Network Setup
-    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1\azure_iothub.c 
+    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/azure_iothub.c 
     - #define ENABLE_OPERATORS_NETWORK_SETUP
     -
-    - Operators network setting in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\external\nb_iot\type1sc\type1sc.h 
+    - Operators network setting in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/external/nb_iot/type1sc/type1sc.h 
     - #define OPERATORS_LPWAN_TPYE		<"choose support LPWAN for your SIM Card">
     - #define OPERATORS_APN			<"choose support APN for your SIM Card">
     - #define OPERATORS_BAND		<"choose support BAND for your SIM Card">
@@ -163,7 +163,7 @@ Flash Image via OTA tool done
     - #define OPERATORS_BAND		    LPWAN_BAND3
     
 ##  Connect Azure Device Provisioning Service(DPS) and IoTHub Device
-    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1\inc\azure_iothub.h 
+    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/inc/azure_iothub.h 
     - #define AZURE_DPS_IOTHUB_STANDALONE_TEST 1
     - #define ENDPOINT                        "global.azure-devices-provisioning.net"
     - #define HOST_NAME                       "Key-in your HOST_NAME"
@@ -173,7 +173,7 @@ Flash Image via OTA tool done
     - #define DEVICE_SYMMETRIC_KEY            "Key-in DEVICE_SYMMETRIC_KEY"
 
 ##  Connect Azure IoT Central
-    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1\inc\azure_iothub.h 
+    - Define as follows value in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/inc/azure_iothub.h 
     - #define AZURE_DPS_IOTHUB_STANDALONE_TEST 0
     - #define ENDPOINT                        "global.azure-devices-provisioning.net"
     - #define REGISTRATION_ID                 "Key-in your REGISTRATION_ID"
@@ -190,15 +190,15 @@ more information please reference the file:
     - upper_body_bbox.y : bounding box y-axis for detected human. 
     - upper_body_bbox.width : bounding box width for detected human.
     - upper_body_bbox.height : bounding box height for detected human.
-    - Change [azure_active_event]  value  in void tflitemicro_start() at Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1\hx_aiot_wifi_g1.c  
+    - Change [azure_active_event]  value  in void tflitemicro_start() at Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/hx_aiot_wifi_g1.c  
     - azure_active_event = ALGO_EVENT_SEND_RESULT_TO_CLOUD;
      
 ## Send Image
-    - Change [azure_active_event] value in void tflitemicro_start() at Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_nb\hx_aiot_wifi_g1.c  
+    - Change [azure_active_event] value in void tflitemicro_start() at Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/hx_aiot_wifi_g1.c  
     - azure_active_event = ALGO_EVENT_SEND_IMAGE_TO_CLOUD;
 
 ## Send Algorithm Metadata and Image
-    - Change [azure_active_event] value in void tflitemicro_start() at Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1\hx_aiot_wifi_g1.c  
+    - Change [azure_active_event] value in void tflitemicro_start() at Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/hx_aiot_wifi_g1.c  
     - azure_active_event = ALGO_EVENT_SEND_RESULT_AND_IMAGE;
 
 ## Send Custom JSON Format Data
@@ -208,7 +208,7 @@ more information please reference the file:
     - uint8_t send_type : SEND_CSTM_JSON_DATA
 
 ## Enter Power Saving Mode
-    - Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1\azure_iothub.c 
+    - Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1/azure_iothub.c 
     - #define ENABLE_PMU
 ## Azure RTOS Startup
   - More detail information please reference [here](https://github.com/azure-rtos)
@@ -216,7 +216,7 @@ more information please reference the file:
 ## TensorFlow Lite for Microcontroller Example 
 
 ### TFLM Model Path
-  - Put your training model in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main\himax_aiot_wf_g1-master\app\scenario_app\hx_aiot_wifi_g1 folder
+  - Put your training model in Himax-AIoT-WF-G1-SDK-Azure-RTOS-main/himax_aiot_wf_g1-master/app/scenario_app/hx_aiot_wifi_g1 folder
  
 ### TFLM Example Person Detection INT8
 
